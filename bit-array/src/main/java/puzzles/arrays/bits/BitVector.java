@@ -16,7 +16,6 @@
  */
 package puzzles.arrays.bits;
 
-
 /**
  * Vector of Bits that grows as needed. By default, all bits are initialized as false.
  * 
