@@ -17,20 +17,20 @@
 package puzzles.tree.linear.walker;
 
 public class Node {
-	String value;
-	Node lChild;
-	Node rChild;
+	private String value;
+	private Node lChild;
+	private Node rChild;
 
 	protected Node() {
-		
+
 	}
-	
+
 	protected Node(Builder builder) {
 		this.value = builder.value;
 		this.lChild = builder.lChild;
 		this.rChild = builder.rChild;
 	}
-	
+
 	public String getValue() {
 		return value;
 	}
@@ -38,47 +38,44 @@ public class Node {
 	public Node getLeftChild() {
 		return lChild;
 	}
+
 	public Node getRightChild() {
 		return rChild;
 	}
-	
-	
-	
+
 	@Override
 	public String toString() {
 		return "Node [value=" + value + "]";
 	}
 
-
-
 	public static class Builder {
 		private String value;
 		private Node lChild;
 		private Node rChild;
-		
+
 		public Builder() {
-			
+
 		}
-		
+
 		public Builder(String value) {
 			this.value = value;
 		}
-		
+
 		public Builder value(String value) {
 			this.value = value;
 			return this;
 		}
-		
+
 		public Builder leftChild(Node lChild) {
 			this.lChild = lChild;
 			return this;
 		}
-		
+
 		public Builder rightChild(Node rChild) {
 			this.rChild = rChild;
 			return this;
 		}
-		
+
 		public Node build() {
 			return new Node(this);
 		}

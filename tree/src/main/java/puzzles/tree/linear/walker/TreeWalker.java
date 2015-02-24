@@ -19,6 +19,7 @@ package puzzles.tree.linear.walker;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * Given a tree like :
  * 
@@ -52,7 +53,7 @@ public class TreeWalker {
 		
 		List<Node> grandChildren = new ArrayList<Node>();
 		for(Node node : children) {
-			System.out.print(node.value);
+			System.out.print(node.getValue());
 			grandChildren.addAll(getChildren(node));
 		}
 		
