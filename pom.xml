@@ -29,6 +29,7 @@
 		<module>bit-array</module>
 		<module>template</module>
 		<module>tree</module>
+        <module>triangle-pascal</module>
 	</modules>
 
 
